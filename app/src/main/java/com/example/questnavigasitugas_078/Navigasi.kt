@@ -14,7 +14,9 @@ enum class KelolaHalaman {
 }
 
 @Composable
-fun Navigasiku(navController: NavHostController = rememberNavController()){
+fun DataApp(
+    navController: NavHostController = rememberNavController()
+){
 
     NavHost(
         navController=navController,
