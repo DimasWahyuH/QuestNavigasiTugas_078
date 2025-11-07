@@ -33,4 +33,8 @@ fun Welcome(navController: NavHostController) {
             Text("Selamat Datang", fontSize = 30.sp, fontWeight = FontWeight.Bold)
 
             Spacer(modifier = Modifier.height(24.dp))
-            
+
+            Image (
+                painter = painterResource(id = R.drawable.screensot),
+                contentDescription = "Welcome",
+            )
