@@ -70,3 +70,16 @@ fun ListPeserta(navController: NavHostController, viewModel: Any){
                 ) {
                     Text(text = "Beranda")
                 }
+                Spacer(modifier = Modifier.height(12.dp))
+
+                Button(
+                    onClick = { navController.navigate("Formulir") },
+                    colors = ButtonDefaults.buttonColors(containerColor = Color.Black),
+                    modifier = Modifier.fillMaxWidth().padding(horizontal = 32.dp)
+                ) {
+                    Text("Formulir Perdaftaran", color = Color.White)
+                }
+            }
+        }
+    }
+}
