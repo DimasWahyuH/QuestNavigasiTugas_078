@@ -116,3 +116,31 @@ fun Formulir(navController: NavHostController, viewmodel: Any) {
                 }
             }
 
+            Spacer(modifier = Modifier.height(16.dp))
+
+            Text(
+                text = "Status Perkawinan",
+                fontWeight = FontWeight.Bold,
+                fontSize = 15.sp,
+                color = Color.DarkGray,
+                modifier = Modifier.align(Alignment.Start)
+
+            )
+            statusOptions.forEach { item ->
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier
+                        .selectable(
+                            selected = status == item,
+                            onClick = { status = item }
+                        )
+                        .padding(vertical = 4.dp)
+                ){
+                    RadioButton(
+                        selected = status == item,
+                        onClick = { status = item }
+                    )
+                    Text(text = item)
+                }
+            }
+
