@@ -144,3 +144,34 @@ fun Formulir(navController: NavHostController, viewmodel: Any) {
                 }
             }
 
+            Spacer(modifier = Modifier.height(16.dp))
+
+            Text(
+                text = "Alamat",
+                fontWeight = FontWeight.Bold,
+                fontSize = 15.sp,
+                color = Color.DarkGray,
+                modifier = Modifier.align(Alignment.Start)
+            )
+            OutlinedTextField(
+                value = alamat,
+                onValueChange = { alamat = it },
+                label = { Text("Isian Alamat") },
+                modifier = Modifier.fillMaxWidth()
+            )
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+            Button(
+                onClick = { },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(50.dp),
+                shape = RoundedCornerShape(10.dp),
+                colors = ButtonDefaults.buttonColors(Color.Gray)
+            ) {
+                Text("Submit", fontSize = 10.sp, color = Color.Black)
+            }
+        }
+    }
+}
