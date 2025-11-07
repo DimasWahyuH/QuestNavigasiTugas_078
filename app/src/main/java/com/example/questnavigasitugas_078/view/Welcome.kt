@@ -44,3 +44,16 @@ fun Welcome(navController: NavHostController) {
             Text("Dimas Wahyu Habibi", fontSize = 25.sp)
             Text("20230140078", fontSize = 23.sp,
                 color = MaterialTheme.colorScheme.secondary)
+
+            Spacer(modifier = Modifier.height(32.dp))
+
+            Button(
+                onClick = { navController.navigate("ListPeserta") },
+                modifier = Modifier.fillMaxWidth(0.7f).height(50.dp)
+            ) {
+                Text("Submit")
+            }
+
+        }
+    }
+}
