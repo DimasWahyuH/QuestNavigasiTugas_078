@@ -43,3 +43,30 @@ fun Formulir(navController: NavHostController, viewmodel: Any) {
 
     val genderOptions = listOf("Laki-laki", "Perempuan")
     val statusOptions = listOf("Menikah", "Belum Menikah")
+
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp, vertical = 12.dp),
+        shape = RoundedCornerShape(20.dp),
+        elevation = CardDefaults.cardElevation(8.dp),
+        colors = CardDefaults.cardColors(containerColor = Color.Gray)
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(10.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = "Formulir Perdaftaran",
+                color = Color.White,
+                fontSize = 22.sp,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clip(RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp))
+                    .background(Color.Blue)
+                    .padding(vertical = 14.dp),
+                textAlign = TextAlign.Center
+            )
