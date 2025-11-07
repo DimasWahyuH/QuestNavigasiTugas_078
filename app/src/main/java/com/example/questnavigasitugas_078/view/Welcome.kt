@@ -32,3 +32,5 @@ fun Welcome(navController: NavHostController) {
         ) {
             Text("Selamat Datang", fontSize = 30.sp, fontWeight = FontWeight.Bold)
 
+            Spacer(modifier = Modifier.height(24.dp))
+            
