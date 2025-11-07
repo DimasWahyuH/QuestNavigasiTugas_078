@@ -49,3 +49,15 @@ fun ListPeserta(navController: NavHostController, viewModel: Any){
 
             Spacer(modifier = Modifier.padding(20.dp))
 
+            peserta.forEach { peserta ->
+                Card (
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = 6.dp),
+                    shape = RoundedCornerShape(16.dp),
+                    elevation = CardDefaults.cardElevation(8.dp)
+                ){
+                    Column(modifier = Modifier.padding(16.dp)) {
+                        Text(text = peserta, fontSize = 16.sp)
+                    }
+                }
