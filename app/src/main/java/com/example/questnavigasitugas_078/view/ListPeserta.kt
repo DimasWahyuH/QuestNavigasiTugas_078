@@ -39,3 +39,13 @@ fun ListPeserta(navController: NavHostController, viewModel: Any){
                 .fillMaxSize()
                 .padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = "Daftar Peserta",
+                fontSize = 24.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
+
+            Spacer(modifier = Modifier.padding(20.dp))
+
