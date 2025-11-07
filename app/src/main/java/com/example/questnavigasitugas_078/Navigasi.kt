@@ -13,3 +13,21 @@ enum class KelolaHalaman {
     Formulir
 }
 
+@Composable
+fun Navigasiku(navController: NavHostController = rememberNavController()){
+
+    NavHost(
+        navController=navController,
+        startDestination = KelolaHalaman.Welcome.name
+    ){
+        composable(route = KelolaHalaman.Welcome.name) {
+
+        }
+        composable(route = KelolaHalaman.ListPeserta.name) {
+
+        }
+        composable(route = KelolaHalaman.Formulir.name) {
+
+        }
+    }
+}
