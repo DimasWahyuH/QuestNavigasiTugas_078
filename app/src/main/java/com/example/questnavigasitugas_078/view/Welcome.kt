@@ -30,3 +30,5 @@ fun Welcome(navController: NavHostController) {
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            Text("Selamat Datang", fontSize = 30.sp, fontWeight = FontWeight.Bold)
+
