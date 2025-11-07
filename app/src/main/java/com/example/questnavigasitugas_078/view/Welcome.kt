@@ -38,3 +38,9 @@ fun Welcome(navController: NavHostController) {
                 painter = painterResource(id = R.drawable.screensot),
                 contentDescription = "Welcome",
             )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            Text("Dimas Wahyu Habibi", fontSize = 25.sp)
+            Text("20230140078", fontSize = 23.sp,
+                color = MaterialTheme.colorScheme.secondary)
