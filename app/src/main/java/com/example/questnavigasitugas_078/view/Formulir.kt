@@ -88,3 +88,31 @@ fun Formulir(navController: NavHostController, viewmodel: Any) {
             )
 
             Spacer(modifier = Modifier.height(16.dp))
+
+
+            Text(
+                text = "Jenis Kelamin",
+                fontWeight = FontWeight.Bold,
+                fontSize = 15.sp,
+                color = Color.DarkGray,
+                modifier = Modifier.align(Alignment.Start)
+            )
+            genderOptions.forEach { item ->
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier
+                        .selectable(
+                            selected = jenisKelamin == item,
+                            onClick = { jenisKelamin = item }
+
+                        )
+                        .padding(vertical = 4.dp)
+                ) {
+                    RadioButton(
+                        selected = jenisKelamin == item,
+                        onClick = { jenisKelamin = item }
+                    )
+                    Text(text = item)
+                }
+            }
+
