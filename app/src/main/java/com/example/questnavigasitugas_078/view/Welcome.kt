@@ -24,3 +24,9 @@ import com.example.questnavigasitugas_078.R
 
 @Composable
 fun Welcome(navController: NavHostController) {
+    Surface(modifier = Modifier.fillMaxSize()) {
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
