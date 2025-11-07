@@ -70,3 +70,21 @@ fun Formulir(navController: NavHostController, viewmodel: Any) {
                     .padding(vertical = 14.dp),
                 textAlign = TextAlign.Center
             )
+
+            Spacer(modifier = Modifier.height(20.dp))
+
+            Text(
+                text = "Nama Lengkap",
+                fontWeight = FontWeight.Bold,
+                fontSize = 18.sp,
+                color = Color.DarkGray,
+                modifier = Modifier.align(Alignment.Start)
+            )
+            OutlinedTextField(
+                value = nama,
+                onValueChange = { nama = it },
+                label = { Text( "Isian Nama Lengkap") },
+                modifier = Modifier.fillMaxWidth()
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
