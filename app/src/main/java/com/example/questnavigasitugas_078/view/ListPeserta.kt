@@ -61,3 +61,12 @@ fun ListPeserta(navController: NavHostController, viewModel: Any){
                         Text(text = peserta, fontSize = 16.sp)
                     }
                 }
+
+                Spacer(modifier = Modifier.height(20.dp))
+
+                Button(
+                    onClick = { navController.navigate("Welcome") },
+                    modifier = Modifier.fillMaxWidth().padding(horizontal = 32.dp)
+                ) {
+                    Text(text = "Beranda")
+                }
